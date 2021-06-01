@@ -159,25 +159,64 @@ nav {
 }
 /* ABOUT ME */
 #about {
+	height: 110vh;
 	background-color: white;
 	color: #1b1b1b;
 	display: grid;
-	line-height: 24px;
 	letter-spacing: 0.4px;
 	grid-template-rows: 0.2fr 1fr;
+	padding: 25px 0 50px 0;
 }
 
 .about--wrapper {
+	margin: 0 25px;
 	display: grid;
 	grid-template-columns: auto auto;
 	gap: 100px;
 }
 
-#about h1 {
+.about--title {
+	font-size: 50px;
 	align-self: center;
 	justify-self: center;
 }
 
+.about-item-1 {
+	font-size: 22px;
+	line-height: 32px;
+	justify-self: center;
+	align-self: center;
+	border-right: 1px solid black;
+}
+
+.about-item-2 {
+	justify-self: center;
+	align-self: center;
+}
+
+.about-item-3,
+.about-item-4 {
+	grid-column: 1 / -1;
+}
+
+.about-item-3 {
+	position: relative;
+	top: 80px;
+	justify-self: center;
+	font-size: 52px;
+}
+
+.about-item-4 {
+	justify-self: center;
+	line-height: 30px;
+	width: 850px;
+	text-align: left;
+	font-size: 19px;
+	border-top: 1px solid black;
+	padding-top: 15px;
+}
+
 #about img {
 	height: 250px;
+	border-radius: 25%;
 }
