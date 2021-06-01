@@ -7,8 +7,8 @@ html {
 }
 
 body {
-	background-color: #373842;
-	color: white;
+	background-color: #212127;
+	color: #e6e6e6;
 }
 
 section {
@@ -22,13 +22,14 @@ section {
 }
 
 .landing--one {
-	font-size: 32px;
-	text-align: center;
+	font-size: 52px;
+	justify-self: center;
+	align-self: center;
 }
 
 .landing--name {
 	position: relative;
-	color: rgb(45, 241, 88);
+	color: rgb(255, 204, 0);
 }
 
 .landing--name::after {
@@ -37,15 +38,15 @@ section {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	border-left: 2px solid rgb(45, 241, 88);
-	animation: typing 2s steps(16) 0.2s, blinking 1.25s infinite 2s;
+	border-left: 2px solid rgb(255, 204, 0);
+	background-color: #212127;
+	animation: typing 2s steps(17) 0.2s, blinking 1.25s infinite 2s;
 	animation-fill-mode: forwards;
-	background-color: #373842;
 }
 
 @keyframes typing {
 	100% {
-		left: 90%;
+		left: 94%;
 		margin: 0 -35px 0 25px;
 	}
 }
@@ -55,8 +56,24 @@ section {
 		border-left: none;
 	}
 	50% {
-		border-left: 2px solid rgb(45, 241, 88);
+		border-left: 2px solid rgb(255, 204, 0);
 	}
+}
+
+.landing--title {
+	color: rgb(66, 133, 244);
+	text-decoration: underline;
+}
+
+.landing--two {
+	font-size: 20px;
+	justify-self: center;
+	align-self: top;
+}
+
+#landing img {
+	justify-self: center;
+	align-self: top;
 }
 
 nav {
@@ -75,18 +92,16 @@ nav {
 	transform: scale(2);
 }
 
-.item {
-	padding: 0 95px;
-}
-
 .item--left {
 	justify-self: right;
-	align-self: center;
+	align-self: top;
+	padding-right: 150px;
 }
 
 .item--right {
 	justify-self: left;
-	align-self: center;
+	align-self: top;
+	padding-left: 150px;
 }
 
 .tooltiptext {
@@ -100,7 +115,7 @@ nav {
 
 	position: absolute;
 	z-index: 1;
-	bottom: 235px;
+	bottom: 155px;
 	margin-left: -70px;
 
 	transition: opacity 0.5s;
@@ -110,4 +125,40 @@ nav {
 	opacity: 1;
 }
 
+/* BACK-TO-TOP */
+.back-to-top {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	width: 25px;
+	border: 2px solid rgb(255, 214, 10);
+	border-radius: 50%;
+	padding: 10px;
+	margin: 0 25px 25px 0;
+	opacity: 0.3;
+	transition: opacity 0.75s;
+	z-index: 1;
+}
+
+.back-to-top:hover {
+	opacity: 1;
+}
+
+.back-to-top .nav--icon {
+	opacity: 0.3;
+	color: rgb(255, 214, 10);
+	transition: opacity 0.75s;
+	transform: scale(1.4);
+	z-index: 1;
+}
+
+.back-to-top:hover .nav--icon {
+	color: rgb(255, 214, 10);
+	opacity: 1;
+}
 /* ABOUT ME */
+#about {
+	background-color: white;
+	color: #1b1b1b;
+}
