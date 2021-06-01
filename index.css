@@ -1,5 +1,6 @@
 * {
 	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -8,7 +9,7 @@ html {
 
 body {
 	background-color: #212127;
-	color: #e6e6e6;
+	color: #fbfbfd;
 }
 
 section {
@@ -74,6 +75,10 @@ section {
 #landing img {
 	justify-self: center;
 	align-self: top;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 50%;
 }
 
 nav {
@@ -82,7 +87,7 @@ nav {
 }
 
 .nav--icon {
-	color: #fefefe;
+	color: #fbfbfd;
 	transition: transform 0.5s;
 	transform: scale(1.6);
 }
@@ -132,7 +137,7 @@ nav {
 	bottom: 0;
 	text-align: center;
 	width: 25px;
-	border: 2px solid rgb(255, 214, 10);
+	border: 2px solid rgb(58, 58, 60);
 	border-radius: 50%;
 	padding: 10px;
 	margin: 0 25px 25px 0;
@@ -146,22 +151,22 @@ nav {
 }
 
 .back-to-top .nav--icon {
-	opacity: 0.3;
-	color: rgb(255, 214, 10);
+	opacity: 0.6;
+	color: rgb(58, 58, 60);
 	transition: opacity 0.75s;
 	transform: scale(1.4);
 	z-index: 1;
 }
 
 .back-to-top:hover .nav--icon {
-	color: rgb(255, 214, 10);
+	color: rgb(58, 58, 60);
 	opacity: 1;
 }
 /* ABOUT ME */
 #about {
 	height: 100vh;
-	background-color: white;
-	color: #1b1b1b;
+	background-color: #fbfbfd;
+	color: #333333;
 	display: grid;
 	letter-spacing: 0.4px;
 	grid-template-rows: 0.2fr 1fr;
@@ -169,9 +174,9 @@ nav {
 }
 
 .about--wrapper {
-	margin: 0 25px;
+	margin: 0 25px 0 155px;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 0.85fr 1fr;
 	gap: 100px;
 }
 
@@ -182,16 +187,23 @@ nav {
 }
 
 .about-item-1 {
-	font-size: 22px;
-	line-height: 32px;
+	font-size: 18px;
+	line-height: 30px;
 	justify-self: center;
 	align-self: center;
 	border-right: 1px solid black;
+	padding-right: 15px;
 }
 
 .about-item-2 {
 	justify-self: center;
 	align-self: center;
+}
+
+.about-item-2 img {
+	height: 250px;
+	width: 250px;
+	border-radius: 25px;
 }
 
 .about-item-3,
@@ -211,12 +223,7 @@ nav {
 	line-height: 30px;
 	width: 850px;
 	text-align: left;
-	font-size: 19px;
+	font-size: 18px;
 	border-top: 1px solid black;
 	padding-top: 15px;
-}
-
-#about img {
-	height: 250px;
-	border-radius: 25%;
 }
