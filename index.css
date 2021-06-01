@@ -161,4 +161,23 @@ nav {
 #about {
 	background-color: white;
 	color: #1b1b1b;
+	display: grid;
+	line-height: 24px;
+	letter-spacing: 0.4px;
+	grid-template-rows: 0.2fr 1fr;
+}
+
+.about--wrapper {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 100px;
+}
+
+#about h1 {
+	align-self: center;
+	justify-self: center;
+}
+
+#about img {
+	height: 250px;
 }

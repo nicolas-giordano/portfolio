@@ -1,2 +1,3 @@
 # portfolio
-Theme for my portfolio website.
+
+This is a theme that I am working on for my personal portfolio.
