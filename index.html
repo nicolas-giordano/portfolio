@@ -2,116 +2,161 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./index.css" />
-		<!-- google outlined icons -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="./style.css" />
+		<!-- GOOGLE ICON OUTLINED -->
 		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
 			rel="stylesheet"
 		/>
-		<!-- google round icons -->
+		<!-- GOOGLE ICON ROUND -->
 		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
 			rel="stylesheet"
 		/>
-		<title>Nicolas Giordano</title>
+		<title>Document</title>
 	</head>
 	<body>
-		<!-- LANDING -->
-		<section id="landing">
-			<p class="landing--one">
-				Hi, my name is <span class="landing--name">Nicolas Giordano</span>
-			</p>
-			<p class="landing--two">
-				I'm a <span class="landing--title">software engineer</span> passionate
-				about making an impact and finding solutions which simplify other's
-				lives.
-			</p>
-			<img src="./me.jpg" alt="Image of myselfs" />
-			<nav>
-				<div class="item item--left">
-					<div class="tooltip">
-						<a href="/#about">
-							<span class="material-icons-outlined nav--icon"> info </span>
-						</a>
-						<span class="tooltiptext">About Me</span>
+		<!-- HEADER -->
+		<header>
+			<div class="flex justify-content-around">
+				<div>
+					<div class="">
+						<p class="title">
+							Hi, my name is <span class="name">Nicolas Giordano</span>
+						</p>
 					</div>
+					<p class="tag-line">
+						I am a <span class="occupation">software engineer</span> looking to
+						make an impact and find solutions which simplify other's lives.
+					</p>
+					<p class="tag-line tag-line-sm">
+						A <span class="occupation">software engineer</span> looking to
+						simplify lives.
+					</p>
 				</div>
-				<div class="item item--right">
-					<div class="tooltip">
-						<a href="/#projects">
-							<span class="material-icons-outlined nav--icon">
-								design_services
-							</span>
-						</a>
-						<span class="tooltiptext">Projects</span>
-					</div>
-				</div>
-			</nav>
-		</section>
-		<!-- BACK TO TOP BUTTON -->
-		<div class="back-to-top">
-			<a href="/#landing"
-				><span class="material-icons-outlined nav--icon"> arrow_upward </span>
-			</a>
-		</div>
-		<!-- ABOUT ME -->
-		<section id="about">
-			<p class="about--title">About Me</p>
-
-			<div class="about--wrapper">
-				<p class="about-item-1">
-					I graduated from <em>University of Redlands</em> in April of 2019 with
-					a B.S. in Chemistry. During my final year I discovered my passion for
-					computer science and enrolled into
-					<em>Washington University in St. Louis</em>
-					where I graduated with a B.S. in Computer Science in May of 2021.
-				</p>
-				<div class="about-item-2">
-					<!-- <img src="./redlands.png" alt="University of Redlands" /> -->
+				<div class="align-self-center">
 					<img
-						src="https://nextstl.com/wp-content/uploads/WUSTL-East-End-Brookings.jpg"
-						alt="Washington University in St. Louis"
+						src="./me.jpg"
+						alt="Image of myself"
+						width="300"
+						height="300"
+						class="personal__image"
 					/>
 				</div>
-				<div class="about-item-3">
-					<p>
-						👨🏻‍⚕️
-						<span class="material-icons-round"> arrow_forward </span>
-						👨‍👩‍👧
-						<span class="material-icons-round"> arrow_back </span>
-						👨🏻‍💻
-					</p>
+				<div class="nav">
+					<nav>
+						<ul class="header__nav">
+							<li>
+								<a href="" class="nav__link"
+									><span class="material-icons-outlined icon">info</span></a
+								>
+							</li>
+							<li>
+								<a href="" class="nav__link"
+									><span class="material-icons-outlined icon">
+										integration_instructions
+									</span></a
+								>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<div class="about-item-4">
-					<p>
-						I have always had the dream that one day I would be able to directly
-						help others. Once upon a time I was pre-med with hopes of becoming a
-						doctor so that I could fulfil this dream. However, the fall before
-						graduating I entered into my first computer science course. Fast
-						forward to today and I am a software engineer. I had the realization
-						that I can help others in their everyday life by honing and
-						utilizing my talents to develope tools that improve their
-						day-to-day.
-					</p>
+			</div>
+		</header>
+		<!-- ABOUT ME -->
+		<section id="about">
+			<div class="container">
+				<p class="title about--title">About Me</p>
+				<div class="flex about--container" style="height: calc(100% - 146px)">
+					<div class="flex row row-1">
+						<div
+							class="column-65 flex justify-content-center align-items-center"
+						>
+							<div style="width: 60%">
+								<p class="about__ed">
+									I graduated from <em>University of Redlands</em> in April of
+									2019 with a B.S. in Chemistry. During my final year I
+									discovered my passion for computer science and enrolled into
+									<em> Washington University in St. Louis </em> where I
+									graduated with a B.S. in Computer Science in May of 2021.
+								</p>
+							</div>
+						</div>
+						<div class="column-35 flex justify-content-center">
+							<img
+								src="./redlands.png"
+								alt="Image of University of Redlands"
+								style="width: 100%"
+								class="about--image"
+							/>
+						</div>
+					</div>
+					<div class="flex row row-2" style="max-height: 50%">
+						<div class="small--image--icons flex row">
+							<img
+								src="./med_relief.JPG"
+								alt="Another image of myself"
+								width="45%"
+								class="about--image"
+								style="max-width: 45%; max-height: 350px"
+							/>
+							<p class="align-self-center story--icons--small">
+								👨🏻‍⚕️
+								<span class="material-icons-round"> arrow_forward </span>
+								👨‍👩‍👧
+								<span class="material-icons-round"> arrow_back </span>
+								👨🏻‍💻
+							</p>
+						</div>
+						<div
+							class="column-40 align-items-center"
+							style="height: 100%; display: flex; justify-content: center"
+						>
+							<img
+								src="./med_relief.JPG"
+								alt="Another image of myself"
+								width="45%"
+								height="min(600px, 95%)"
+								class="about--image"
+							/>
+						</div>
+						<div
+							class="column-60 flex justify-content-center align-items-center"
+						>
+							<div class="flex justify-content-center" style="width: 85%">
+								<p class="align-self-center story--icons">
+									👨🏻‍⚕️
+									<span class="material-icons-round"> arrow_forward </span>
+									👨‍👩‍👧
+									<span class="material-icons-round"> arrow_back </span>
+									👨🏻‍💻
+								</p>
+								<p class="story">
+									I have always had the dream that one day I would be able to
+									directly help others. Once upon a time I was pre-med with
+									hopes of becoming a doctor so that I could fulfil this dream.
+									However, the fall before graduating I entered into my first
+									computer science course.
+									<span class="text--small">
+										Fast forward to today and I am a software engineer. I had
+										the realization that I can help others in their everyday
+										life by honing and utilizing my talents to develope tools
+										that improve their day-to-day.
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<!-- PROJECTS -->
 		<section id="projects">
 			<div>
-				<p>Background</p>
-				<ul>
-					<li>JavaScript</li>
-					<li>Python</li>
-					<li>Java</li>
-					<li>HTML / CSS</li>
-					<li>SQL</li>
-					<li>PHP</li>
-				</ul>
+				<p>Projects</p>
 			</div>
-			<h1>Projects</h1>
 		</section>
 	</body>
 </html>
