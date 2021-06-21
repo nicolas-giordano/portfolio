@@ -43,6 +43,8 @@ section {
 	align-items: center;
 }
 
+
+
 /* HEADER */
 header {
 	background-color: #212127;
@@ -68,7 +70,7 @@ header {
 	font-size: 52px;
 }
 .occupation {
-	color: rgb(10, 132, 255);
+	color: rgb(48, 209, 88);
 	text-decoration: underline;
 }
 .personal__image {
@@ -97,6 +99,11 @@ header {
 .nav__link:hover {
 	color: rgb(255, 214, 10);
 }
+.sub--title {
+	padding: 35px 0 50px 0;
+}
+
+
 
 /* ABOUT ME */
 .content {
@@ -105,12 +112,9 @@ header {
 #about {
 	background-color: #fbfbfd;
 }
-.about--title {
-	padding: 35px 0 50px 0;
-}
 .column-35 {
-	flex: 35%;
-	max-width: 35%;
+	flex: 45%;
+	max-width: 40%;
 }
 .column-40 {
 	flex: 40%;
@@ -121,8 +125,8 @@ header {
 	max-width: 60%;
 }
 .column-65 {
-	flex: 65%;
-	max-width: 65%;
+	flex: 55%;
+	max-width: 55%;
 }
 .story,
 .about__ed {
@@ -147,10 +151,54 @@ header {
 .small--image--icons {
 	display: none;
 }
+
+
+
 /* PROJECTS */
 #projects {
-	background-color: #fbfbfd;
+	height: auto;
+	background-color: rgb(199, 199, 204);
 }
+.project--container {
+	margin: 2% 0 0 0;
+	padding-bottom: 50px;
+}
+.card {
+	position: relative;
+	height: 350px;
+	flex: calc(50% - 40px);
+	background-color: #fbfbfd;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 15px;
+}
+.card-title {
+	text-decoration: underline;
+	text-align: center;
+	font-size: 30px;
+}
+.card-title a {
+	color: rgb(10, 132, 255);
+}
+.card-body {
+	margin-top: 25px;
+	text-align: left;
+}
+.card-text {
+	padding: 8px;
+	line-height: 22px;
+}
+.card-disclaimer {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.tech {
+	position: absolute;
+	bottom: 5px;
+}
+
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
@@ -183,6 +231,8 @@ header {
 		display: none;
 	}
 
+
+	
 	/* ABOUT ME */
 	#about {
 		min-height: 1200px;
@@ -295,6 +345,7 @@ header {
 	}
 }
 @media screen and (max-width: 480px) {
+	/* ABOUT ME */
 	.story--icons--small {
 		display: none !important;
 	}
@@ -318,6 +369,8 @@ header {
 	.tag-line-sm {
 		display: block;
 	}
+
+
 
 	/* ABOUT ME */
 	#about {
@@ -343,6 +396,8 @@ header {
 	.tag-line {
 		font-size: 16px;
 	}
+
+
 
 	/* ABOUT ME */
 	.row-2 {

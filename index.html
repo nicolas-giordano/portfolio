@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="My name is Nicolas Giordano. I aspire to impact peoples lives across the globe."
+		/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<link rel="stylesheet" href="./style.css" />
 		<!-- GOOGLE ICON OUTLINED -->
@@ -18,6 +22,7 @@
 		<title>Document</title>
 	</head>
 	<body>
+
 		<!-- HEADER -->
 		<header>
 			<div class="flex justify-content-around">
@@ -29,7 +34,7 @@
 					</div>
 					<p class="tag-line">
 						I am a <span class="occupation">software engineer</span> looking to
-						make an impact and find solutions which simplify other's lives.
+						make an impact and simplify other's lives around the world.
 					</p>
 					<p class="tag-line tag-line-sm">
 						A <span class="occupation">software engineer</span> looking to
@@ -65,10 +70,11 @@
 				</div>
 			</div>
 		</header>
+
 		<!-- ABOUT ME -->
 		<section id="about">
 			<div class="container">
-				<p class="title about--title">About Me</p>
+				<p class="title sub--title">About Me</p>
 				<div class="flex about--container" style="height: calc(100% - 146px)">
 					<div class="flex row row-1">
 						<div
@@ -112,7 +118,7 @@
 						</div>
 						<div
 							class="column-40 align-items-center"
-							style="height: 100%; display: flex; justify-content: center"
+							style="height: 85%; display: flex; justify-content: center"
 						>
 							<img
 								src="./med_relief.JPG"
@@ -152,11 +158,37 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- PROJECTS -->
 		<section id="projects">
-			<div>
-				<p>Projects</p>
+			<div class='container'>
+				<p class='title sub--title'>Projects</p>
+				<div class="flex row project--container">
+					<div class="card">
+						<p class="card-title"><a href="">BestPrices</a></p>
+						<div class=card-body>
+							<p class="card-disclaimer"><em>Under continuous development whenever I have free time.</em></p>
+							<p class="card-text">A personal idea to readily make grocery prices available to consumers. Users can search the database for an item found at the market and get info on its pricing at stores where data has been recorded.</p>
+							<p class="card-text">My first project utilizing Django to get a basic understanding of its front/back end capabilities. I also developed the project within a docker container to practice utilizing a non-local environment for development.</p>
+							<p class="card-text tech">Utilizing - Docker, Django, Heroku, PostgreSQL</p>
+						</div>
+					</div>
+					<div class="card">
+						<p class="card-title"><a href="">Porthubolio</a></p>
+						<div class="card-body">
+							<p class="card-text">
+								A web-app created to serve as a sort of fusion between Google Docs/Github and LinkedIn. Users fall into either a professional which is someone showcasing theirself and their portfolio, or a recruiter who can search through all professionals and reach out to those of interest.
+							</p>
+							<p class="card-text">Created by myself and two others in a group for a software development course. The premise was to familiarize working with a group on a larger scale project. We also practiced <em>AGILE</em> software development with weekly scrums to check our sprint achievements.</p>
+							<p class="card-text tech">Utilizing - Firebase Realtime Database, Node.js, React, Redux</p>
+						</div>
+					</div>
+					<div class="card">
+						Another Project
+					</div>
+				</div>
 			</div>
 		</section>
+
 	</body>
 </html>
