@@ -450,7 +450,7 @@ header {
 @media screen and (max-width: 425px) {
 	/* OUTER LINKS */
 	.fa-3x {
-		font-size: 2em;
+		font-size: 2em !important;
 	}
 
 
