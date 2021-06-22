@@ -384,6 +384,9 @@ header {
 	.links > a {
 		opacity: 100%;
 	}
+	#back-to-top:hover {
+		opacity: 40%;
+	}
 }
 @media screen and (max-width: 620px) {
 	/* ABOUT ME */
