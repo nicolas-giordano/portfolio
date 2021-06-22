@@ -65,8 +65,8 @@ section {
 	opacity: 100%;
 }
 
-.links > i:hover {
-	cursor: pointer;
+.links > a:focus {
+	outline: none;
 }
 
 
@@ -378,6 +378,11 @@ header {
 	}
 	.card {
 		max-width: 95%;
+	}
+}
+@media screen and (max-width: 748px) {
+	.links > a {
+		opacity: 100%;
 	}
 }
 @media screen and (max-width: 620px) {
