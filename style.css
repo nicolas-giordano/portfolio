@@ -49,6 +49,7 @@ section {
 
 /* OUTER LINKS */
 .links {
+	z-index: 100;
 	position: fixed;
 	top: 10px;
 	right: 10px;
@@ -57,6 +58,11 @@ section {
 .links > a {
 	color: #fbfbfd;
 	padding: 15px 0;
+	opacity: 40%;
+	transition: opacity .6s;
+}
+.links > a:hover {
+	opacity: 100%;
 }
 
 .links > i:hover {
@@ -79,11 +85,10 @@ section {
 	right: 15px;
 	border: 2px solid #212127;
 	border-radius: 50%;
-	transition: transform .6s;
+	transition: opacity .6s;
 }
 #back-to-top:hover {
 	opacity: 100%;
-	transform: scale(1.9);
 	cursor: pointer;
 }
 
@@ -443,6 +448,13 @@ header {
 }
 
 @media screen and (max-width: 425px) {
+	/* OUTER LINKS */
+	.fa-3x {
+		font-size: 2em;
+	}
+
+
+
 	/* HEADER */
 	.title {
 		font-size: 38px;
