@@ -189,6 +189,10 @@ header {
 	padding: 8px;
 	line-height: 22px;
 }
+.card-long {
+	margin: 0 20% 0 20%;
+	line-height: 1.7;
+}
 .card-disclaimer {
 	text-align: center;
 	margin-bottom: 10px;
@@ -201,6 +205,23 @@ header {
 
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1260px) {
+	/* PROJECTS */
+	.project--container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.card {
+		height: 400px;
+		max-width: 70%;
+		flex: none;
+	}
+	.card-long {
+		margin: 0;
+		line-height: default;
+
+	}
+}
 @media screen and (max-width: 1024px) {
 	/* ABOUT ME */
 	#about {
@@ -298,6 +319,16 @@ header {
 	.row-2 {
 		max-height: 70% !important;
 	}
+
+
+
+	/* PROJECTS */
+	#projects {
+		padding: 0;
+	}
+	.card {
+		max-width: 95%;
+	}
 }
 @media screen and (max-width: 620px) {
 	/* ABOUT ME */
@@ -343,6 +374,13 @@ header {
 		font-size: 13px;
 		line-height: 24px;
 	}
+
+
+
+	/* PROJECTS */
+	.card {
+		height: 500px;
+	}
 }
 @media screen and (max-width: 480px) {
 	/* ABOUT ME */
@@ -358,6 +396,7 @@ header {
 		margin: 0 auto;
 	}
 }
+
 @media screen and (max-width: 425px) {
 	/* HEADER */
 	.title {
@@ -386,6 +425,11 @@ header {
 	.text--small {
 		padding-top: 5px;
 		display: block;
+	}
+}
+@media screen and (max-width: 375px) {
+	.card {
+		height: 600px;
 	}
 }
 @media screen and (max-width: 320px) {
