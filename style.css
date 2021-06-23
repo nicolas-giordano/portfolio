@@ -126,7 +126,7 @@ header {
 .personal__image {
 	max-width: 100%;
 	object-fit: cover;
-	border-radius: 50%;
+	border-radius: 5px;
 }
 .nav {
 	width: 100%;
